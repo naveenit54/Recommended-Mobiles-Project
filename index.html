@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recommended Mobiles</h1>
+        <label for="price-range">Enter Price Range:</label>
+        <input type="number" id="min-price" placeholder="Min Price">
+        <input type="number" id="max-price" placeholder="Max Price">
+        <button id="apply-filter">Apply Filter</button>
+        <label for="sort-by">Sort By:</label>
+        <select id="sort-by">
+            <option value="company">Company</option>
+            <option value="price">Price</option>
+        </select>
+        <ul id="mobile-list" class="grid-container"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
